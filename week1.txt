@@ -1,2 +1,85 @@
+TEMA1
 Ovidiu Ungureanu
 Am reusit
+
+
+Tema 2 - Pseudocode Homework
+
+2a. Wash the dishes
+
+Step 1 : Make sure you have detergent and sponge
+Step 2 : If you have what you need, go to Step 4, else go to Step 3
+Step 3 : Go to the shop and buy what you need
+Step 4 : Scrape all the food into the garbage
+Step 5 : Turn on the water
+Step 6 : If it is cold, go to Step 7, else go to Step 8
+Step 7 : Switch cold water to hot
+Step 8 : Wash less dirty items first
+Step 9 : One by one put the item in the drying rack
+Step 10 : If you're done with Step 8 and Step 9, start washing the bigger ones
+Step 11 : Do the same as Step 9
+Step 12 : Wait for half an hour
+Step 13 : Clean up the items only if they are dried up, else Repeat Step 12
+Step 14 : Put the items in their place
+Step 15 : Done
+
+
+
+2b. Make the bed
+
+Step 1 : Ensure you have what you need to make this action
+Step 2 : Clear the bed
+Step 3 : If it has a fitted sheet, go to Step 5, else go to Step 4
+Step 4 : Put a fitted sheet on the bed
+Step 5 : Put the top sheet on
+Step 6 : Fold the end of the top sheet tightly under the mattress
+Step 7 : Make sure the duvet matches the color of the sheets
+Step 8 : If matches the color go to Step 10, else go to Step 9
+Step 9 : Go and search in the closet for the right one
+Step 10 : Put the pillows
+Step 11 : Sweet dreams
+
+
+2c. Sorting algorithm
+
+We have 10 grades, and they have to be sorted:
+9 4 8 2 10 7 6 3 1 5 => 1 2 3 4 5 6 7 8 9 10
+
+Step 1: We agree that we need to sort the numbers from left to right, and we determine that 10 is the biggest number
+Step 2: We will start comparing No.9 on the List with No.4
+Step 3: If No.9 is ">" then No. 4, we will Swap them
+Step 4: We repeat the Same Swapping system until it reaches a Number that is Higher (in our case, is 10)
+Step 5: We do the same swaping system with No.10, until it will not have any number to compare to
+Step 6: We will determine the curent order in the list, after No. 10 has reached the end of the list: 4 8 2 9 7 6 3 1 5 10
+Step 7: We will Start the same process (Comparing and swapping) with our current first Number in the list
+Step 8: We will repeat the processes detailed in the Steps above, until we reach the desired order
+Step 9: Final order: 1 2 3 4 5 6 7 8 9 10
+
+
+4a. ATM withdraw operation
+
+INPUT: The Amount that needs to be withdrawn
+READ: The amount entered by the operator
+SET: set fee equal 0.5%
+DETERMINE: If amount is more than 1$, then apply 0.5% fee to the amount
+COMPUTE: 0.5% * Amount
+DISPLAY: The output will be the Result after the fee is applied
+DETERMINE: If amount is less than 1
+DISPLAY: The amount must be >= to 1
+
+
+4b.
+
+INPUT: Banknotes ( 1, 5, 10, 20, 50, 100, 200, 500)
+READ: Amount Entered by the user
+SET: Types of banknotes
+DETERMINE: How many banknotes for each type are in the ATM
+CALCULATE: If amount is 500 the ATM will return 2X200 and 1X100
+           Else If the amount is 200 the ATM will return 1X200, or 2X100
+           Else If the amount is 100 the ATM will return 1X100, or 2X50
+           Else If the amount is 50 the ATM will return 1X50
+           Else If the amount is 20 the ATM will return 2X10, or 1X20
+           Else If the amount is 10 the ATM will return 2X5, or 1X10
+           Else If the amount is 5 the ATM will return 1X5
+           Else If the amount is 1 the ATM will return 1X1
+DISPLAY: It will show the output
