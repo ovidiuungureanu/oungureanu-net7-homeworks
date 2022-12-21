@@ -23,7 +23,7 @@ namespace week4
 
         public string GetFullName()
         {
-            return firstName + " " + lastName;
+            return $"{firstName} {lastName}";
         }
 
         public bool HasHonors()

@@ -1,10 +1,11 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using week4;
 
 
 // Exercise 1
 
-Book book = new Book ("War and Peace", "Leo Tolstoy", 1869 );
+Book book = new Book("War and Peace", "Leo Tolstoy", 1869);
 
 Console.WriteLine(book.GetTitle());
 Console.WriteLine(book.GetAuthor());
@@ -103,17 +104,45 @@ myUniversity.AddFaculty(bob);
 Console.WriteLine(myUniversity.GetStudentCount());
 Console.WriteLine(myUniversity.GetFacultyCount());
 
+
+
 // Exercise 6
 Console.WriteLine();
 
 College college = new College();
-college.name = "Frantz";
+college.name = "Petre Andrei";
+
 Student1 ovi = new Student1("Ovidiu", DateTime.Now.AddYears(-12), DateTime.Now.AddYears(2), college, DateTime.Now.AddYears(-25));
 ovi.Print();
+
 Console.WriteLine(ovi.IsStillStudent());
+Console.WriteLine();
+
+// Exercise 6  - Before Update class Professor
+
+Professor prof = new Professor("Andrei", "Al.I.Cuza", "Finance");
+Console.WriteLine(prof.name);
+
+Student1 ana = new Student1("Ovidiu", DateTime.Now.AddYears(-12), DateTime.Now.AddYears(2), college, DateTime.Now.AddYears(-25));
+Student1 maria = new Student1("Ovidiu", DateTime.Now.AddYears(-12), DateTime.Now.AddYears(2), college, DateTime.Now.AddYears(-25));
+
+Professor prof2 = new Professor("Vlad", "Gh.Asachi", "Math", new List<Student1>() { ana, maria });
+Console.WriteLine(prof2.specialization);
+
+prof2.AddStudent(ana);
 
 
-// Exercise 7
+
+// Exercise 7 - After Update Class Professor
+
+
+//Professor prof4 = new Professor("Ana", college, ovi);
+//Console.WriteLine();
+
+//College diferit = new College();
+//Professor prof5 = new Professor("Ana", diferit, ovi);
+
+
 
 
 

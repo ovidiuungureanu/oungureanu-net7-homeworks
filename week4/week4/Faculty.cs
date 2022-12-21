@@ -18,21 +18,19 @@ namespace week4
             this.firstName = firstName;
             this.lastName = lastName;
             this.employeeId = employeeId;
-            this.subjectsTaught = new List<string>();
+            this.subjectsTaught = subjectsTaught;
         }
 
         public string GetFullName()
         {
-            return firstName + " " + lastName;
+            return $"{firstName} {lastName}";
         }
 
         public List<string> GetSubjectsTaught()
         {
-            foreach(string subjects in subjectsTaught)
-            {
-                subjectsTaught.Add(subjects);
-            }
             return this.subjectsTaught;
         }
+
+      
     }
 }
